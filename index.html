@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10233f">
+  <title>Freshman Hub Ethiopia</title>
+  <meta name="description" content="Study materials and past exams for Ethiopian university freshmen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Freshman Hub Ethiopia</h1>
+    <p>Your learning journey starts here.</p>
+  </header>
+
+  <main>
+    <section id="catalog">
+      <h2>Study Materials</h2>
+      <input id="search" type="search" placeholder="Search courses..." aria-label="Search courses">
+      <div id="courses"></div>
+      <p id="empty" hidden>No courses found.</p>
+    </section>
+
+    <section id="learning" style="display: none;">
+      <button id="back" type="button">Back to courses</button>
+      <div id="lesson"></div>
+    </section>
+
+    <section id="exams-section" class="exams-section">
+      <h2>Past Exams</h2>
+      <div id="exam-list" class="exam-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Freshman Hub Ethiopia © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
