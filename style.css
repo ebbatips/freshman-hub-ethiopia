@@ -1,0 +1,140 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy: #10233f;
+  --green: #087f5b;
+  --gold: #e6b85c;
+  --background: #f4f7fb;
+  --white: #ffffff;
+  --text: #263449;
+  --muted: #69778b;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.site-header {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 48px 18px;
+  border-bottom: 5px solid var(--gold);
+}
+
+.site-header h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  margin-bottom: 8px;
+}
+
+.site-header p {
+  color: #dce6f2;
+}
+
+main {
+  width: min(100% - 32px, 1000px);
+  margin: 32px auto;
+}
+
+section {
+  background: var(--white);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(16, 35, 63, 0.06);
+}
+
+h2 {
+  color: var(--navy);
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+#search {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d5deea;
+  border-radius: 9px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline-color: var(--green);
+}
+
+#courses,
+.exam-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+#courses > *,
+.exam-list > * {
+  background: var(--white);
+  border: 1px solid #e0e7ef;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+button {
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #066849;
+}
+
+a {
+  color: var(--green);
+}
+
+#learning {
+  min-height: 180px;
+}
+
+#back {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  background: var(--navy);
+  color: #dce6f2;
+  padding: 24px 16px;
+  margin-top: 40px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 36px 16px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+}
